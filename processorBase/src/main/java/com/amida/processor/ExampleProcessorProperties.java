@@ -3,7 +3,7 @@ package com.amida.processor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties("test")
-public class CcdProcessorProperties {
+public class ExampleProcessorProperties {
 
 	private static final String DEFAULT_EXPRESSION = "payload";
 
