@@ -1,0 +1,20 @@
+ 
+{
+	"folders": [
+		{
+			"path": "./processorBase"
+		},
+		{
+			"path": "./sinkBase"
+		},
+		{
+			"path": "./sourceBase"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
