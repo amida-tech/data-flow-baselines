@@ -1,0 +1,3170 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Composition",
+        "id": "33f01c91-8ad5-4e9f-a4b3-92e782cd8a47",
+        "identifier": {
+          "use": "official",
+          "system": "urn:oid:2.16.840.1.113883.19.5.99999.1",
+          "value": "TT988"
+        },
+        "status": "preliminary",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34133-9",
+              "display": "Summarization of Episode Note"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+                "code": "LP173421-7",
+                "display": "Note"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "date": "2013-08-15T10:30:00-08:00",
+        "author": [
+          {
+            "reference": "Practitioner/bef0da2f-d87b-4560-a2d9-0109ccfc12ac",
+            "display": "Patricia Patty Primary M.D."
+          }
+        ],
+        "title": "Patient Chart Summary",
+        "confidentiality": "N",
+        "attester": [
+          {
+            "mode": "legal",
+            "time": "2013-08-15T22:36:15-08:00",
+            "party": {
+              "reference": "Practitioner/bef0da2f-d87b-4560-a2d9-0109ccfc12ac",
+              "display": "Patricia Patty Primary M.D."
+            }
+          },
+          {
+            "mode": "professional",
+            "time": "2013-08-15T22:15:45-08:00",
+            "party": {
+              "reference": "Practitioner/bef0da2f-d87b-4560-a2d9-0109ccfc12ac",
+              "display": "Patricia Patty Primary M.D."
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/86376d43-a1cb-4a98-ba12-bba106ea1811",
+          "display": "Good Health HIE"
+        },
+        "event": [
+          {
+            "period": {
+              "start": "1975-05-01",
+              "end": "2013-08-15"
+            },
+            "detail": [
+              {
+                "reference": "Practitioner/bef0da2f-d87b-4560-a2d9-0109ccfc12ac",
+                "display": "Patricia Patty Primary M.D."
+              }
+            ]
+          }
+        ],
+        "section": [
+          {
+            "title": "ENCOUNTERS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "46240-8",
+                  "display": "History of encounters"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Encounter/f96fbcdd-a814-491c-80be-2bfafc616b4e",
+                "display": "Checkup Examination"
+              }
+            ]
+          },
+          {
+            "title": "MEDICATIONS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0",
+                  "display": "HISTORY OF MEDICATION USE"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "MedicationStatement/f714f902-f9ea-4a4b-a738-62f96e02032b",
+                "display": "Atenolol 25 MG Oral Tablet"
+              },
+              {
+                "reference": "MedicationStatement/4070934a-e671-44fe-bf1d-deb58e85b4dd",
+                "display": "Proventil 0.09 MG/ACTUAT inhalant solution"
+              }
+            ]
+          },
+          {
+            "title": "ALLERGIES AND ADVERSE REACTIONS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "AllergyIntolerance/f3e135e8-9639-415b-80e2-bb48343c1fbd",
+                "display": "Penicillin"
+              },
+              {
+                "reference": "AllergyIntolerance/abfbddeb-0a80-4775-847d-ff5ebcb1ec60",
+                "display": "Codeine"
+              }
+            ]
+          },
+          {
+            "title": "VITAL SIGNS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8716-3",
+                  "display": "VITAL SIGNS"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Observation/28557d47-1507-49db-be54-3890f99b66f2",
+                "display": "BP Diastolic"
+              },
+              {
+                "reference": "Observation/94d2bec1-94d3-4110-96e8-3d54b462e764",
+                "display": "Patient Body Weight - Measured"
+              },
+              {
+                "reference": "Observation/06142c5c-820f-4077-be27-671536817841",
+                "display": "Height"
+              },
+              {
+                "reference": "Observation/434760af-629f-411a-93ae-3d5c1a532434",
+                "display": "Intravascular Systolic"
+              },
+              {
+                "reference": "Observation/df560886-edef-4660-a397-6b2356976187",
+                "display": "BP Systolic"
+              },
+              {
+                "reference": "Observation/02af6da7-7924-492f-ac92-dc13d45bd0f6",
+                "display": "Patient Body Weight - Measured"
+              },
+              {
+                "reference": "Observation/55e0732f-f92e-4ffd-919f-30ab282eea2a",
+                "display": "BP Diastolic"
+              },
+              {
+                "reference": "Observation/fd779c31-4e1b-49f6-a07b-f8fed91f1c5b",
+                "display": "Height"
+              }
+            ]
+          },
+          {
+            "title": "PROCEDURES",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47519-4",
+                  "display": "HISTORY OF PROCEDURES"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Procedure/d9395925-05dc-4495-8469-92ff3064937a",
+                "display": "Colonic polypectomy"
+              }
+            ]
+          },
+          {
+            "title": "IMMUNIZATIONS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6",
+                  "display": "History of immunizations"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Immunization/332ceb6a-1449-4a3c-aba9-87bf01863c81",
+                "display": "Influenza virus vaccine"
+              },
+              {
+                "reference": "Immunization/f9762a33-cfb7-4687-8281-c98a8ab91bed",
+                "display": "Influenza virus vaccine"
+              },
+              {
+                "reference": "Immunization/3d8bc28d-b923-476d-b13f-207d13f03fbd",
+                "display": "Pneumococcal polysaccharide vaccine"
+              },
+              {
+                "reference": "Immunization/5eb85ffa-9c0c-465d-8e3c-ec34814800f7",
+                "display": "Tetanus and diphtheria toxoids - preservative free"
+              },
+              {
+                "reference": "Immunization/0c245633-d729-4176-b122-60d56fd74351",
+                "display": "Hepatitis B vaccine"
+              }
+            ]
+          },
+          {
+            "title": "RESULTS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2",
+                  "display": "RESULTS"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "DiagnosticReport/9b67debc-e9af-4af9-b683-cf4268a962a4",
+                "display": "Blood chemistry test"
+              },
+              {
+                "reference": "DiagnosticReport/6d2ddb65-7a03-439c-a01f-42673003a6a5",
+                "display": "CBC W Auto Differential panel in Blood"
+              }
+            ]
+          },
+          {
+            "title": "PROBLEMS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "PROBLEM LIST"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Condition/0501af60-aa44-432a-a6ab-578e8b10fb7f",
+                "display": "Pneumonia"
+              },
+              {
+                "reference": "Condition/f4983816-d80e-4e10-9f2a-40e65c4a34d5",
+                "display": "Chest pain"
+              },
+              {
+                "reference": "Condition/265bf586-b485-47fe-88e0-551896f46d5f",
+                "display": "Angina"
+              },
+              {
+                "reference": "Condition/fede7441-cd64-45f1-8073-ddae35aedba0",
+                "display": "Pneumonia"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Composition",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.19.5.99999.1|TT988"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.1",
+            "value": "444222222"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "family": "Betterhalf",
+            "given": [
+              "Eve"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)555-2003",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1975-05-01",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "2222 Home Street"
+            ],
+            "city": "Beaverton",
+            "state": "OR",
+            "postalCode": "97867",
+            "country": "US"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "code": "M",
+              "display": "Married"
+            }
+          ]
+        },
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "O",
+                    "display": "Other"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "family": "Betterhalf",
+              "given": [
+                "Boris",
+                "Bo"
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "+1(555)555-2008",
+                "use": "mobile"
+              }
+            ],
+            "address": {
+              "use": "home",
+              "line": [
+                "2222 Home Street"
+              ],
+              "city": "Beaverton",
+              "state": "OR",
+              "postalCode": "97867",
+              "country": "US"
+            }
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/ValueSet/languages",
+                  "code": "en"
+                }
+              ]
+            },
+            "preferred": true
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/713c094c-c38d-49ba-acc1-7d58bb781077",
+          "display": "The DoctorsTogether Physician Group"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.1|444222222"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "713c094c-c38d-49ba-acc1-7d58bb781077",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "219BX"
+          }
+        ],
+        "name": "The DoctorsTogether Physician Group",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": " +1(555)555-5000",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1007 Health Drive"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "99123",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|219BX"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "bef0da2f-d87b-4560-a2d9-0109ccfc12ac",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "5555555555"
+          }
+        ],
+        "name": [
+          {
+            "family": "Primary",
+            "given": [
+              "Patricia",
+              "Patty"
+            ],
+            "suffix": [
+              "M.D."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)555-1004",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1004 Healthcare Drive"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "99123",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|5555555555"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "86376d43-a1cb-4a98-ba12-bba106ea1811",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "321CX"
+          }
+        ],
+        "name": "Good Health HIE",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)555-1009",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "1009 Healthcare Drive"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "99123",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|321CX"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "f96fbcdd-a814-491c-80be-2bfafc616b4e",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+          }
+        ],
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "99213",
+                "display": "Office outpatient visit 15 minutes"
+              }
+            ],
+            "text": "Checkup Examination"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation"
+                  }
+                ]
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/c3ea9c1d-0459-4fb0-b25a-dde31b1fef63"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-09-27T13:00:00+05:00"
+        },
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/39905761-bbeb-4098-a0f1-5c8bc02853cc",
+              "display": "Pneumonia"
+            }
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "Location/0ec43163-9436-439b-9500-44c93224a079",
+              "display": "Good Health Urgent Care"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter",
+        "ifNoneExist": "identifier=2a620155-9d11-439e-92b3-5d9815ff4de8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "c3ea9c1d-0459-4fb0-b25a-dde31b1fef63",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "333444555"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|333444555"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "39905761-bbeb-4098-a0f1-5c8bc02853cc",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+            "value": "45665"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "233604007",
+              "display": "Pneumonia"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "onsetDateTime": "2012-09-25T11:30:00+05:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=urn:uuid:db734647-fc99-424c-a864-7e3cda82e703|45665"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "0ec43163-9436-439b-9500-44c93224a079",
+        "name": "Good Health Urgent Care",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": " +1(555)555-1030",
+            "use": "work"
+          }
+        ],
+        "address": {
+          "line": [
+            "1007 Health Drive"
+          ],
+          "city": "Portland",
+          "state": "OR",
+          "postalCode": "99123",
+          "country": "US"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Location"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "f714f902-f9ea-4a4b-a738-62f96e02032b",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-411c-b7bd-5e4a9f206e29"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/7552212c-bd08-487e-b3f8-26439e8c56cd",
+          "display": "Atenolol 25 MG Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2012-03-18"
+        },
+        "informationSource": {
+          "reference": "Practitioner/bef0da2f-d87b-4560-a2d9-0109ccfc12ac",
+          "display": "Patricia Patty Primary M.D."
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/df79df37-80ee-4c48-9068-63837f931ede",
+            "display": "Hypertension"
+          }
+        ],
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 12,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-411c-b7bd-5e4a9f206e29"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "7552212c-bd08-487e-b3f8-26439e8c56cd",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197380",
+              "display": "Atenolol 25 MG Oral Tablet"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|197380"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "df79df37-80ee-4c48-9068-63837f931ede",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "e63166c7-6482-4a44-83a1-37ccdbde725b"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertension"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=e63166c7-6482-4a44-83a1-37ccdbde725b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4070934a-e671-44fe-bf1d-deb58e85b4dd",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/a3d4aa67-4a38-46ef-a8f6-21654767de2d",
+          "display": "Proventil 0.09 MG/ACTUAT inhalant solution"
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2011-01-03"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/39905761-bbeb-4098-a0f1-5c8bc02853cc",
+            "display": "Pneumonia"
+          }
+        ],
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 6,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38216",
+                  "display": "RESPIRATORY (INHALATION)"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 2,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "375735b0-ecce-405c-9e13-e8aab9484e36",
+        "name": "Medication Factory Inc."
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=medicationfactoryinc."
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "a3d4aa67-4a38-46ef-a8f6-21654767de2d",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "573621",
+              "display": "Proventil 0.09 MG/ACTUAT inhalant solution"
+            },
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "219483",
+              "display": "Proventil HFA"
+            }
+          ]
+        },
+        "manufacturer": {
+          "reference": "Organization/375735b0-ecce-405c-9e13-e8aab9484e36",
+          "display": "Medication Factory Inc."
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|573621&http://www.nlm.nih.gov/research/umls/rxnorm|219483"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "291609ac-38da-40a5-8696-b268be928f2e",
+        "status": "completed",
+        "intent": "instance-order",
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "requester": {
+          "reference": "Practitioner/bef0da2f-d87b-4560-a2d9-0109ccfc12ac",
+          "display": "Patricia Patty Primary M.D."
+        },
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2007-01-03"
+          },
+          "numberOfRepeatsAllowed": 1,
+          "quantity": {
+            "value": 75,
+            "unit": "1"
+          }
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationDispense",
+        "id": "2112d66c-4710-468e-87bc-11f063c1d78a",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.2.3.4.56789.1",
+            "value": "cb734647-fc99-424c-a864-7e3cda82e704"
+          }
+        ],
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "Practitioner/3b3b8977-53d2-4885-9b12-fa93f5ebcb03",
+              "display": "Susan Script Pharm.D."
+            }
+          }
+        ],
+        "quantity": {
+          "value": 75,
+          "unit": "1",
+          "system": "http://unitsofmeasure.org/ucum.html"
+        },
+        "whenPrepared": "2012-08-15T14:50:00-08:00",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "event": [
+                "2012-08-15T14:50:00-08:00"
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 75,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationDispense",
+        "ifNoneExist": "identifier=urn:oid:1.2.3.4.56789.1|cb734647-fc99-424c-a864-7e3cda82e704"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "3b3b8977-53d2-4885-9b12-fa93f5ebcb03",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "333222222"
+          }
+        ],
+        "name": [
+          {
+            "family": "Script",
+            "given": [
+              "Susan"
+            ],
+            "suffix": [
+              "Pharm.D."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)555-1016",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1016 Health Drive"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "99123",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|333222222"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "976b2cbd-21e4-4419-9131-1a008eb62ea4",
+        "practitioner": {
+          "reference": "Practitioner/3b3b8977-53d2-4885-9b12-fa93f5ebcb03",
+          "display": "Susan Script Pharm.D."
+        },
+        "organization": {
+          "reference": "Organization/07fc228f-6986-480f-bab0-a47255ffe560",
+          "display": "People's Pharmacy"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole",
+        "ifNoneExist": "practitioner.identifier=null|null&organization.identifier=null|null"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "07fc228f-6986-480f-bab0-a47255ffe560",
+        "name": "People's Pharmacy"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=people'spharmacy"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "f3e135e8-9639-415b-80e2-bb48343c1fbd",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "type": "allergy",
+        "category": [
+          "environment"
+        ],
+        "criticality": "high",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "70618",
+              "display": "Penicillin"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "onsetDateTime": "1998-05-01",
+        "recordedDate": "1998-05-01T11:45:00-08:00",
+        "recorder": {
+          "reference": "Practitioner/df73d64f-536f-4042-82fd-a8a9b59d9938"
+        },
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "422587007",
+                    "display": "Nausea"
+                  }
+                ]
+              }
+            ],
+            "onset": "2008-02-26T08:05:00-08:00",
+            "severity": "mild"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "AllergyIntolerance",
+        "ifNoneExist": "identifier=36e3e930-7b14-11db-9fe1-0800200c9a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "df73d64f-536f-4042-82fd-a8a9b59d9938",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "222223333"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|222223333"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "abfbddeb-0a80-4775-847d-ff5ebcb1ec60",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "b03805bd-2eb6-4ab8-a9ff-473c6653971a"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "type": "allergy",
+        "category": [
+          "environment"
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2670",
+              "display": "Codeine"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "recordedDate": "1998-05-01T11:45:00-08:00",
+        "recorder": {
+          "reference": "Practitioner/df73d64f-536f-4042-82fd-a8a9b59d9938"
+        },
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "56018004",
+                    "display": "Wheezing"
+                  }
+                ]
+              }
+            ],
+            "severity": "moderate"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "AllergyIntolerance",
+        "ifNoneExist": "identifier=b03805bd-2eb6-4ab8-a9ff-473c6653971a"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "28557d47-1507-49db-be54-3890f99b66f2",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "1c2748b7-e440-41ba-bc01-dde97d84a036"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "BP Diastolic"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2012-09-10"
+        },
+        "issued": "2011-09-01T09:15:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+          }
+        ],
+        "valueQuantity": {
+          "value": 88,
+          "unit": "mm[Hg]"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=1c2748b7-e440-41ba-bc01-dde97d84a036"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "70b6490f-b7a5-44e3-aa64-47a0956da880",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "555555555"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|555555555"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "94d2bec1-94d3-4110-96e8-3d54b462e764",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f4e729e2-a97f-4a7e-8e23-c92f9b6b55cf"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3141-9",
+              "display": "Patient Body Weight - Measured"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2012-09-10"
+        },
+        "issued": "2012-09-10T11:45:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+          }
+        ],
+        "valueQuantity": {
+          "value": 86,
+          "unit": "kg"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f4e729e2-a97f-4a7e-8e23-c92f9b6b55cf"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "06142c5c-820f-4077-be27-671536817841",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ed9589fd-fda0-41f7-a3d0-dc537554f5c2"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2012-09-10"
+        },
+        "issued": "2012-09-10T11:45:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+          }
+        ],
+        "valueQuantity": {
+          "value": 177,
+          "unit": "cm"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=ed9589fd-fda0-41f7-a3d0-dc537554f5c2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "434760af-629f-411a-93ae-3d5c1a532434",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "a0e39c70-9674-4b2a-9837-cdf74200d8d5"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Intravascular Systolic"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2012-09-10"
+        },
+        "issued": "2012-09-10T11:45:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+          }
+        ],
+        "valueQuantity": {
+          "value": 132,
+          "unit": "mm[Hg]"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=a0e39c70-9674-4b2a-9837-cdf74200d8d5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "df560886-edef-4660-a397-6b2356976187",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "b046c35a-59c7-4215-ae09-9a8409a30b21"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "BP Systolic"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2011-09-01"
+        },
+        "issued": "2011-09-01T09:15:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+          }
+        ],
+        "valueQuantity": {
+          "value": 128,
+          "unit": "mm[Hg]"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=b046c35a-59c7-4215-ae09-9a8409a30b21"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "02af6da7-7924-492f-ac92-dc13d45bd0f6",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "21b0f3d5-7d07-4f4f-ad7e-c33dc2ca3835"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3141-9",
+              "display": "Patient Body Weight - Measured"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2011-09-01"
+        },
+        "issued": "2011-09-01T09:15:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+          }
+        ],
+        "valueQuantity": {
+          "value": 88,
+          "unit": "kg"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=21b0f3d5-7d07-4f4f-ad7e-c33dc2ca3835"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "55e0732f-f92e-4ffd-919f-30ab282eea2a",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "44f54e66-fb4b-4ee5-9ced-9574ef307a23"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "BP Diastolic"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2011-09-01"
+        },
+        "issued": "2011-09-01T09:15:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+          }
+        ],
+        "valueQuantity": {
+          "value": 80,
+          "unit": "mm[Hg]"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=44f54e66-fb4b-4ee5-9ced-9574ef307a23"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fd779c31-4e1b-49f6-a07b-f8fed91f1c5b",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "05c047cd-28c3-41cd-be6c-56f8cc0c3f2f"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2011-09-01"
+        },
+        "issued": "2011-09-01T09:15:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+          }
+        ],
+        "valueQuantity": {
+          "value": 177,
+          "unit": "cm"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=05c047cd-28c3-41cd-be6c-56f8cc0c3f2f"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "d9395925-05dc-4495-8469-92ff3064937a",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "73761001",
+              "display": "Colonoscopy"
+            }
+          ],
+          "text": "Colonic polypectomy"
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "encounter": {
+          "reference": "Encounter/f96fbcdd-a814-491c-80be-2bfafc616b4e",
+          "display": "Colonic polypectomy"
+        },
+        "performedPeriod": {
+          "start": "2012-05-12"
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "Practitioner/1b3831ad-d953-44eb-a1d1-437d8b7e001e"
+            },
+            "onBehalfOf": {
+              "reference": "Organization/f3f5ab51-f552-46e2-bd79-4edf8ff9842c"
+            }
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.3.88.12.3221.8.9",
+                "code": "appropriate_code",
+                "display": "colon"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure",
+        "ifNoneExist": "identifier=d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "1b3831ad-d953-44eb-a1d1-437d8b7e001e",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.19.5.9999.456",
+            "value": "2981823"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)555-5000",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1001 Village Avenue"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "99123",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.19.5.9999.456|2981823"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "455dcd90-158a-4d05-a614-ba51c43d2784",
+        "practitioner": {
+          "reference": "Practitioner/1b3831ad-d953-44eb-a1d1-437d8b7e001e"
+        },
+        "organization": {
+          "reference": "Organization/f3f5ab51-f552-46e2-bd79-4edf8ff9842c",
+          "display": "Community Health and Hospitals"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole",
+        "ifNoneExist": "practitioner.identifier=null|null&organization.identifier=null|null"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "f3f5ab51-f552-46e2-bd79-4edf8ff9842c",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "2.16.840.1.113883.19.5.9999.1393"
+          }
+        ],
+        "name": "Community Health and Hospitals",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)555-5000",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1001 Village Avenue"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "99123",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=2.16.840.1.113883.19.5.9999.1393"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "332ceb6a-1449-4a3c-aba9-87bf01863c81",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.59",
+              "code": "88",
+              "display": "Influenza virus vaccine"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "occurrenceDateTime": "1999-11",
+        "primarySource": true,
+        "manufacturer": {
+          "reference": "Organization/e585bfa7-0d1a-4349-9845-d4cf6f45f5a4",
+          "display": "Health LS - Immuno Inc."
+        },
+        "lotNumber": "1",
+        "route": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/nci",
+              "code": "C28161",
+              "display": "Intramuscular injection"
+            }
+          ]
+        },
+        "doseQuantity": {
+          "value": 50,
+          "unit": "ug",
+          "system": "http://unitsofmeasure.org/ucum.html"
+        },
+        "performer": [
+          {
+            "function": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0443",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/824c9514-ae2b-4b2e-8b44-2238fea0451a",
+              "display": "Harold Hippocrates"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Immunization",
+        "ifNoneExist": "identifier=e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "e585bfa7-0d1a-4349-9845-d4cf6f45f5a4",
+        "name": "Health LS - Immuno Inc."
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=healthls-immunoinc."
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "824c9514-ae2b-4b2e-8b44-2238fea0451a",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.19.5.9999.456",
+            "value": "2981824"
+          }
+        ],
+        "name": [
+          {
+            "family": "Hippocrates",
+            "given": [
+              "Harold"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": " +1(555)555-1030",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1007 Health Drive"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "99123",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.19.5.9999.456|2981824"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "d5cc78e3-000a-49ad-8d1b-4e01f163c733",
+        "practitioner": {
+          "reference": "Practitioner/824c9514-ae2b-4b2e-8b44-2238fea0451a",
+          "display": "Harold Hippocrates"
+        },
+        "organization": {
+          "reference": "Organization/fe6bd0d9-3969-41e1-8d63-3313fce0717d",
+          "display": "Good Health Clinic"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole",
+        "ifNoneExist": "practitioner.identifier=null|null&organization.identifier=null|null"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe6bd0d9-3969-41e1-8d63-3313fce0717d",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "2.16.840.1.113883.19.5.9999.1394"
+          }
+        ],
+        "name": "Good Health Clinic",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": " +1(555)555-1030",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1007 Health Drive"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "99123",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=2.16.840.1.113883.19.5.9999.1394"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "f9762a33-cfb7-4687-8281-c98a8ab91bed",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f93"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.59",
+              "code": "88",
+              "display": "Influenza virus vaccine"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "occurrenceDateTime": "1998-12-15",
+        "primarySource": true,
+        "lotNumber": "1",
+        "route": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/nci",
+              "code": "C28161",
+              "display": "Intramuscular injection"
+            }
+          ]
+        },
+        "doseQuantity": {
+          "value": 50,
+          "unit": "ug",
+          "system": "http://unitsofmeasure.org/ucum.html"
+        },
+        "performer": [
+          {
+            "function": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0443",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/824c9514-ae2b-4b2e-8b44-2238fea0451a",
+              "display": "Harold Hippocrates"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Immunization",
+        "ifNoneExist": "identifier=e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f93"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "3d8bc28d-b923-476d-b13f-207d13f03fbd",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f94"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.59",
+              "code": "33",
+              "display": "Pneumococcal polysaccharide vaccine"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "occurrenceDateTime": "1998-12-15",
+        "primarySource": true,
+        "lotNumber": "1",
+        "route": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/nci",
+              "code": "C28161",
+              "display": "Intramuscular injection"
+            }
+          ]
+        },
+        "doseQuantity": {
+          "value": 50,
+          "unit": "ug",
+          "system": "http://unitsofmeasure.org/ucum.html"
+        },
+        "performer": [
+          {
+            "function": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0443",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/824c9514-ae2b-4b2e-8b44-2238fea0451a",
+              "display": "Harold Hippocrates"
+            }
+          }
+        ],
+        "reaction": [
+          {
+            "date": "1998-12-15T08:05:00-08:00",
+            "detail": {
+              "reference": "Observation/cf909f2c-362b-452d-907f-74fc5b30dc4f"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Immunization",
+        "ifNoneExist": "identifier=e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f94"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cf909f2c-362b-452d-907f-74fc5b30dc4f",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "4adc1020-7b14-11db-9fe1-0800200c9a64"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.5.4",
+              "code": "ASSERTION"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "1998-12-15T08:05:00-08:00",
+          "end": "1998-12-15T12:05:00-08:00"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "422587007",
+              "display": "Nausea"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=4adc1020-7b14-11db-9fe1-0800200c9a64"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "5eb85ffa-9c0c-465d-8e3c-ec34814800f7",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f95"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.59",
+              "code": "103",
+              "display": "Tetanus and diphtheria toxoids - preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "occurrenceDateTime": "1998-12-15",
+        "primarySource": true,
+        "lotNumber": "1",
+        "route": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/nci",
+              "code": "C28161",
+              "display": "Intramuscular injection"
+            }
+          ]
+        },
+        "doseQuantity": {
+          "value": 50,
+          "unit": "ug",
+          "system": "http://unitsofmeasure.org/ucum.html"
+        },
+        "performer": [
+          {
+            "function": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0443",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/824c9514-ae2b-4b2e-8b44-2238fea0451a",
+              "display": "Harold Hippocrates"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Immunization",
+        "ifNoneExist": "identifier=e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f95"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "0c245633-d729-4176-b122-60d56fd74351",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "de10790f-1496-4719-8fe6-f1b87b6219f7"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.59",
+              "code": "45",
+              "display": "Hepatitis B vaccine"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "occurrenceDateTime": "2013-08-01",
+        "primarySource": true,
+        "lotNumber": "1",
+        "route": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/nci",
+              "code": "C28161",
+              "display": "Intramuscular injection"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "function": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0443",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/824c9514-ae2b-4b2e-8b44-2238fea0451a",
+              "display": "Harold Hippocrates"
+            }
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "195967001",
+                "display": "Asthma"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Immunization",
+        "ifNoneExist": "identifier=de10790f-1496-4719-8fe6-f1b87b6219f7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "9b67debc-e9af-4af9-b683-cf4268a962a4",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "122ed3ae-6d9e-43d0-bfa2-434ea34b1426"
+          }
+        ],
+        "status": "partial",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "166312007",
+              "display": "Blood chemistry test"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2008-03-20T09:30:00-08:00",
+          "end": "2008-03-20T09:30:00-08:00"
+        },
+        "result": [
+          {
+            "reference": "Observation/ad1b58f6-ba56-44cd-ab64-060856e20d6a",
+            "display": "Urea nitrogen, Serum"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DiagnosticReport",
+        "ifNoneExist": "identifier=122ed3ae-6d9e-43d0-bfa2-434ea34b1426"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ad1b58f6-ba56-44cd-ab64-060856e20d6a",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "aed821af-3330-4138-97f0-e84dfe5f3c35"
+          }
+        ],
+        "status": "preliminary",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3094-0",
+              "display": "Urea nitrogen, Serum"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2008-03-20T09:30:00-08:00"
+        },
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/data-absent-reason",
+              "code": "error",
+              "display": "Error"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=aed821af-3330-4138-97f0-e84dfe5f3c35"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "6d2ddb65-7a03-439c-a01f-42673003a6a5",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "57021-8",
+              "display": "CBC W Auto Differential panel in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2008-03-19T08:30:00-08:00",
+          "end": "2008-03-19T08:30:00-08:00"
+        },
+        "result": [
+          {
+            "reference": "Observation/de68dfe8-5a7a-461b-bb99-c59cbc668960",
+            "display": "Hematocrit"
+          },
+          {
+            "reference": "Observation/f6db7e40-eb2a-42d2-b8c1-b8052ad5a424",
+            "display": "Hemoglobin"
+          },
+          {
+            "reference": "Observation/093139f2-2fc4-4e31-8010-4400d05ca9c1",
+            "display": "Platelets"
+          },
+          {
+            "reference": "Observation/d8bdc6bc-3397-42cc-8c7e-3dca2e6c7ab8",
+            "display": "Leukocytes"
+          },
+          {
+            "reference": "Observation/bbe37c18-1b55-4341-ba82-c038c7047d7b",
+            "display": "Erythrocytes"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DiagnosticReport",
+        "ifNoneExist": "identifier=7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "de68dfe8-5a7a-461b-bb99-c59cbc668960",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "7c0704bb-9c40-41b5-9c7d-26b2d59e234f"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4544-3",
+              "display": "Hematocrit"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2008-03-19T08:30:00-08:00"
+        },
+        "issued": "2008-03-19T08:30:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/b7ebff11-ed4e-4de9-9d83-91109a79980e"
+          }
+        ],
+        "valueQuantity": {
+          "value": 35.3,
+          "unit": "%"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 34.9,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            },
+            "high": {
+              "value": 44.5,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=7c0704bb-9c40-41b5-9c7d-26b2d59e234f"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "b7ebff11-ed4e-4de9-9d83-91109a79980e",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "333444444"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|333444444"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f6db7e40-eb2a-42d2-b8c1-b8052ad5a424",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Hemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2008-03-19T08:30:00-08:00"
+        },
+        "issued": "2008-03-19T08:30:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/b7ebff11-ed4e-4de9-9d83-91109a79980e"
+          }
+        ],
+        "valueQuantity": {
+          "value": 13.2,
+          "unit": "g/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 12.0,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=107c2dc0-67a5-11db-bd13-0800200c9a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "093139f2-2fc4-4e31-8010-4400d05ca9c1",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ef5c1c58-4665-4556-a8e8-6e720d82f572"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "777-3",
+              "display": "Platelets"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2008-03-19T08:30:00-08:00"
+        },
+        "issued": "2008-03-19T08:30:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/b7ebff11-ed4e-4de9-9d83-91109a79980e"
+          }
+        ],
+        "valueQuantity": {
+          "value": 123,
+          "unit": "10*9/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 150,
+              "unit": "10*9/L",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            },
+            "high": {
+              "value": 350,
+              "unit": "10*9/L",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=ef5c1c58-4665-4556-a8e8-6e720d82f572"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d8bdc6bc-3397-42cc-8c7e-3dca2e6c7ab8",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "a69b3d60-2ffd-4440-958b-72b3335ff35f"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6690-2",
+              "display": "Leukocytes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2008-03-19T08:30:00-08:00"
+        },
+        "issued": "2008-03-19T08:30:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/b7ebff11-ed4e-4de9-9d83-91109a79980e"
+          }
+        ],
+        "valueQuantity": {
+          "value": 6.7,
+          "unit": "10*9/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 4.3,
+              "unit": "10*9/L",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            },
+            "high": {
+              "value": 10.8,
+              "unit": "10*9/L",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=a69b3d60-2ffd-4440-958b-72b3335ff35f"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bbe37c18-1b55-4341-ba82-c038c7047d7b",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "bccd6fc9-0c7f-455e-8616-923ed0d04d09"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8",
+              "display": "Erythrocytes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "effectivePeriod": {
+          "start": "2008-03-19T08:30:00-08:00"
+        },
+        "issued": "2008-03-19T08:30:00-08:00",
+        "performer": [
+          {
+            "reference": "Practitioner/b7ebff11-ed4e-4de9-9d83-91109a79980e"
+          }
+        ],
+        "valueQuantity": {
+          "value": 4.21,
+          "unit": "10*12/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.90,
+              "unit": "10*12/L",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            },
+            "high": {
+              "value": 5.03,
+              "unit": "10*12/L",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=bccd6fc9-0c7f-455e-8616-923ed0d04d09"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "0501af60-aa44-432a-a6ab-578e8b10fb7f",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "inactive",
+              "display": "Inactive"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "233604007",
+              "display": "Pneumonia"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "onsetDateTime": "2013-07-03",
+        "abatementDateTime": "2008-08-14",
+        "recordedDate": "2008-08-14T10:30:00-08:00",
+        "asserter": {
+          "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=ab1791b0-5c71-11db-b0de-0800200c9a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "f4983816-d80e-4e10-9f2a-40e65c4a34d5",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "11d088a8-b957-401c-8ee0-3bd20a772fc0"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "29857009",
+              "display": "Chest pain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "onsetDateTime": "2007-04-14",
+        "recordedDate": "2007-04-14T15:15:00-08:00",
+        "asserter": {
+          "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=11d088a8-b957-401c-8ee0-3bd20a772fc0"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "265bf586-b485-47fe-88e0-551896f46d5f",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "4991db40-4c4f-41e8-9146-50c12d716424"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "194828000",
+              "display": "Angina"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "onsetDateTime": "2007-04-17",
+        "recordedDate": "2007-04-17T15:15:00-08:00",
+        "asserter": {
+          "reference": "Practitioner/12cabe98-61b6-46bd-955d-4a8e83c96f02"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=4991db40-4c4f-41e8-9146-50c12d716424"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "12cabe98-61b6-46bd-955d-4a8e83c96f02",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "222334444"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|222334444"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "fede7441-cd64-45f1-8073-ddae35aedba0",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "10506b4d-c30a-4220-8bec-97bff9568fd1"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "inactive",
+              "display": "Inactive"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "refuted",
+              "display": "Refuted"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "233604007",
+              "display": "Pneumonia"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ab826c1-efdf-422e-b9c7-5d38ff84d054",
+          "display": "Eve Betterhalf"
+        },
+        "onsetDateTime": "1998-03-10",
+        "abatementDateTime": "1998-03-16",
+        "recordedDate": "1998-03-16T10:30:00-08:00",
+        "asserter": {
+          "reference": "Practitioner/70b6490f-b7a5-44e3-aa64-47a0956da880"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=10506b4d-c30a-4220-8bec-97bff9568fd1"
+      }
+    }
+  ]
+}
