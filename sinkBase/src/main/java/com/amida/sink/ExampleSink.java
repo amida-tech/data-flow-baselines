@@ -1,7 +1,5 @@
 package com.amida.sink;
 
-import java.io.FileInputStream;
-
 import org.hl7.fhir.r4.model.Bundle;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
@@ -22,9 +20,9 @@ public class ExampleSink {
     public void process(Message<String> message){
     	FhirContext r4 = FhirContext.forR4();
     	IParser jsonParser = r4.newJsonParser();
-	    String serverBase = "http://localhost:8080/hapi-fhir-jpaserver/fhir";
+    	SinkProperties prop = new SinkProperties();
+	    String serverBase = "http://hapi:8080/hapi-fhir-jpaserver/fhir";
 	    IGenericClient client = r4.newRestfulGenericClient(serverBase);
-    	FileInputStream file;
     	
     	// parsing json entries to fhir resource objects 
 		Bundle bundle = jsonParser.parseResource(Bundle.class, message.getPayload());
