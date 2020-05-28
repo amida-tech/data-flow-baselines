@@ -1,27 +1,31 @@
 package com.amida.sink;
 
+import javax.validation.constraints.NotBlank;
+
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties("server")
 public class SinkProperties {
-	 private String ip = "localhost";
+	 private String host = "hapi";
 
-     private int port = 8080;
+     private String port = "8080";
      
-     public String getIp() {
-    	 return ip;
-     }
-     
-     public void setIp(String newIp) {
-    	 this.ip = newIp;
-     }
-     
-     public int getPort() {
-    	 return port;
-     }
-     
-     public void setPort(int newPort) {
-    	 this.port = newPort;
-     }
+     @NotBlank
+ 	public String getHost() {
+ 		return host;
+ 	}
+
+ 	public void setHost(String host) {
+ 		this.host = host;
+ 	}
+
+ 	@NotBlank
+ 	public String getPort() {
+ 		return port;
+ 	}
+
+ 	public void setPort(String port) {
+ 		this.port = port;
+ 	}
 
 }
