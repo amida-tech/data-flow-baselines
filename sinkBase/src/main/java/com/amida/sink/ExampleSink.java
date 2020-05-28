@@ -19,8 +19,6 @@ import lombok.extern.slf4j.Slf4j;
 @Configuration
 @EnableConfigurationProperties(SinkProperties.class)
 public class ExampleSink {
-//	@Autowired
-//	private SinkProperties prop;
 
     //specify what type of message you are receiveing
     @StreamListener(Sink.INPUT)
