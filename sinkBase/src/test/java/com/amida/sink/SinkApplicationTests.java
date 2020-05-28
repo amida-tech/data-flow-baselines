@@ -29,6 +29,12 @@ class SinkApplicationTests {
 	void contextLoads() {
 	}
 
+	@Ignore
+	public void testUsageCostLogger() throws Exception {
+		ArgumentCaptor<Message> captor = ArgumentCaptor.forClass(Message.class);
+		this.sink.input().send(MessageBuilder.withPayload("example text").build());
+	}
+
 
 	@EnableAutoConfiguration
 	@EnableBinding(Sink.class)
